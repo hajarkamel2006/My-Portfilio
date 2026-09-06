@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajar Kamel Mohammed | Junior Front-End Developer & Instructor</title>
+    <meta name="description"
+        content="Official portfolio of Hajar Kamel Mohammed - Junior Front-End Developer, Technical Instructor, and IT & AI student at EELU. Specializing in HTML5, CSS3, JavaScript, Bootstrap, REST APIs, and React.js.">
+    <meta name="keywords"
+        content="Hajar Kamel Mohammed, Front-End Developer, Web Development Instructor, EELU, GDSC Fayoum, Portfolio, React Developer">
+    <meta name="author" content="Hajar Kamel Mohammed">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./Hajar.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-code">&lt;</span>Hajar<span class="logo-highlight">Kamel</span><span
+                    class="logo-code">/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+                    <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+                    <li><a href="#certifications" class="nav-link"><i class="fa-solid fa-certificate"></i>
+                            Credentials</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta">Let's Talk</a>
+                <button class="hamburger-btn" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-background-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Open for Junior Front-End Developer Opportunities</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hello, I'm <br>
+                        <span class="gradient-text">Hajar Kamel Mohammed</span>
+                    </h1>
+
+                    <div class="hero-subtitle">
+                        I am a <span class="typed-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </div>
+
+                    <p class="hero-description">
+                        Junior Front-End Developer & Technical Instructor based in Fayoum, Egypt.
+                        3rd year IT & AI student at EELU. Specializing in building clean, responsive web apps using
+                        <strong>HTML5, CSS3, JavaScript, Bootstrap, REST APIs</strong>, and currently expanding into
+                        <strong>React.js</strong>.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-rocket"></i> Explore Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-avatar-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="avatar-card">
+                        <div class="avatar-ring ring-1"></div>
+                        <div class="avatar-ring ring-2"></div>
+                        <div class="avatar-img-box">
+                            <img src="./Hajar.jpeg" alt="Hajar Kamel Mohammed - Front-End Developer" class="avatar-img">
+                        </div>
+                        <div class="avatar-floating-badge badge-top">
+                            <i class="fa-brands fa-react react-icon"></i>
+                            <span>Learning React.js</span>
+                        </div>
+                        <div class="avatar-floating-badge badge-bottom">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>EELU IT & AI Undergrad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-down-btn" aria-label="Scroll down">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Metrics & Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="stat-number">Web Projects</div>
+                        <div class="stat-label">Built & Deployed</div>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div class="stat-number">80+</div>
+                        <div class="stat-label">Live Sessions Taught</div>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                        <div class="stat-number">60+</div>
+                        <div class="stat-label">Students Trained</div>
+                    </div>
+                    <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="stat-icon"><i class="fa-solid fa-people-group"></i></div>
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Tech Community Roles</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">&lt;profile_summary&gt;</span>
+                    <h2 class="section-title">About <span class="gradient-text">Hajar Kamel</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-column" data-aos="fade-right">
+                        <div class="about-frame">
+                            <img src="./about.jpg" alt="Programming and Code Development Setup"
+                                class="about-img coding-theme-img">
+                            <div class="about-code-badge">
+                                <i class="fa-solid fa-code"></i>
+                                <span>clean_code.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text-column" data-aos="fade-left">
+                        <h3 class="about-heading">Front-End Developer & Technical Educator</h3>
+                        <p class="about-bio">
+                            I am a third-year student pursuing a <strong>Bachelor of Information Technology and
+                                Artificial Intelligence</strong> at the <em>Egyptian E-Learning University (EELU)</em>
+                            (Graduation 2028). I focus on translating design concepts into structured, usable, and
+                            high-performance web interfaces.
+                        </p>
+                        <p class="about-bio">
+                            Alongside personal and collaborative web development, I work as an online freelance
+                            instructor. I have delivered over <strong>80+ live online sessions</strong> teaching 60+
+                            students the fundamentals of HTML, CSS, JavaScript, Bootstrap, and Python logic through
+                            hands-on assignments.
+                        </p>
+                        <p class="about-bio">
+                            Active in the developer community, I serve as <strong>Head of Public Relations at GDSC
+                                Fayoum University</strong> and <strong>Head of Operations & Relations at YDP</strong>,
+                            coordinating technical workshops and outreach initiatives.
+                        </p>
+
+                        <div class="about-info-grid">
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span class="info-label">Location:</span>
+                                    <span class="info-value">Egypt - Fayoum</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <span class="info-label">University:</span>
+                                    <span class="info-value">EELU (B.Sc. IT & AI)</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-code"></i>
+                                <div>
+                                    <span class="info-label">Specialization:</span>
+                                    <span class="info-value">Front-End Development</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-language"></i>
+                                <div>
+                                    <span class="info-label">Languages:</span>
+                                    <span class="info-value">Arabic (Native), English (Intermediate)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-highlights">
+                            <div class="highlight-chip"><i class="fa-solid fa-check"></i> Responsive Layouts</div>
+                            <div class="highlight-chip"><i class="fa-solid fa-check"></i> DOM & REST APIs</div>
+                            <div class="highlight-chip"><i class="fa-solid fa-check"></i> Code Review & Mentoring</div>
+                            <div class="highlight-chip"><i class="fa-solid fa-check"></i> GDSC & YDP Leadership</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">&lt;technical_stack&gt;</span>
+                    <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <!-- Front-End Core -->
+                    <div class="skill-category-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div>
+                                <h3>Front-End Web Development</h3>
+                                <p>Building modern responsive user interfaces</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-grid">
+                            <div class="skill-pill"><i class="fa-brands fa-html5 skill-icon html-color"></i> HTML5</div>
+                            <div class="skill-pill"><i class="fa-brands fa-css3-alt skill-icon css-color"></i> CSS3
+                            </div>
+                            <div class="skill-pill"><i class="fa-brands fa-js skill-icon js-color"></i> JavaScript
+                                (ES6+)</div>
+                            <div class="skill-pill"><i class="fa-brands fa-bootstrap skill-icon bootstrap-color"></i>
+                                Bootstrap</div>
+                            <div class="skill-pill"><i class="fa-solid fa-mobile-screen skill-icon"></i> Responsive Web
+                                Design</div>
+                            <div class="skill-pill"><i class="fa-solid fa-table-cells-large skill-icon"></i> Flexbox &
+                                CSS Grid</div>
+                            <div class="skill-pill"><i class="fa-solid fa-code-branch skill-icon"></i> DOM Manipulation
+                            </div>
+                            <div class="skill-pill"><i class="fa-solid fa-plug skill-icon"></i> REST API Integration
+                            </div>
+                            <div class="skill-pill"><i class="fa-solid fa-database skill-icon"></i> JSON & Local Storage
+                            </div>
+                            <div class="skill-pill highlight-learning">
+                                <i class="fa-brands fa-react skill-icon react-color spin-icon"></i>
+                                <span>React.js</span>
+                                <span class="learning-badge">Currently Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages & Frameworks -->
+                    <div class="skill-category-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-terminal"></i></div>
+                            <div>
+                                <h3>Programming Languages & Frameworks</h3>
+                                <p>Core logic, object-oriented concepts, and mobile apps</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-grid">
+                            <div class="skill-pill"><i class="fa-brands fa-java skill-icon java-color"></i> Java</div>
+                            <div class="skill-pill"><i class="fa-brands fa-python skill-icon python-color"></i> Python
+                            </div>
+                            <div class="skill-pill"><i class="fa-solid fa-code skill-icon dart-color"></i> Dart</div>
+                            <div class="skill-pill"><i class="fa-solid fa-mobile-button skill-icon flutter-color"></i>
+                                Flutter</div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Soft Skills -->
+                    <div class="skills-dual-grid">
+                        <div class="skill-category-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="category-header">
+                                <div class="category-icon"><i class="fa-solid fa-wrench"></i></div>
+                                <div>
+                                    <h3>Development Tools</h3>
+                                    <p>Version control & design</p>
+                                </div>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-pill"><i class="fa-brands fa-git-alt skill-icon git-color"></i> Git
+                                </div>
+                                <div class="skill-pill"><i class="fa-brands fa-github skill-icon"></i> GitHub</div>
+                                <div class="skill-pill"><i class="fa-solid fa-code-slash skill-icon vscode-color"></i>
+                                    VS Code</div>
+                                <div class="skill-pill"><i class="fa-brands fa-figma skill-icon figma-color"></i> Figma
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="category-header">
+                                <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
+                                <div>
+                                    <h3>Soft Skills</h3>
+                                    <p>Teamwork and problem solving</p>
+                                </div>
+                            </div>
+                            <div class="skills-grid">
+                                <div class="skill-pill"><i class="fa-solid fa-lightbulb"></i> Problem Solving</div>
+                                <div class="skill-pill"><i class="fa-solid fa-puzzle-piece"></i> Critical Thinking</div>
+                                <div class="skill-pill"><i class="fa-solid fa-users"></i> Teamwork</div>
+                                <div class="skill-pill"><i class="fa-solid fa-user-tie"></i> Leadership</div>
+                                <div class="skill-pill"><i class="fa-solid fa-comments"></i> Communication</div>
+                                <div class="skill-pill"><i class="fa-solid fa-clock"></i> Time Management</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Leadership Section -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">&lt;practical_experience&gt;</span>
+                    <h2 class="section-title">Experience & <span class="gradient-text">Leadership</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Front-End Projects -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-dot"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-role">Front-End Developer</span>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024 – Present</span>
+                            </div>
+                            <h4 class="timeline-company">Collaborative & Personal Web Projects</h4>
+                            <ul class="timeline-bullets">
+                                <li>Developed responsive web interfaces using HTML5, CSS3, JavaScript (ES6+), Bootstrap,
+                                    Flexbox, and CSS Grid.</li>
+                                <li>Integrated REST APIs to dynamically retrieve and display data in web applications.
+                                </li>
+                                <li>Implemented client-side interactivity and Local Storage to persist application
+                                    state.</li>
+                                <li>Managed codebases with Git/GitHub and deployed live applications on Vercel.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Online Instructor -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-dot instructor-dot"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-role">Online Front-End Instructor</span>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024 – Present</span>
+                            </div>
+                            <h4 class="timeline-company">Freelance Technical Training</h4>
+                            <ul class="timeline-bullets">
+                                <li>Delivered <strong>80+ live online sessions</strong> covering HTML, CSS, JavaScript,
+                                    and Bootstrap.</li>
+                                <li>Trained <strong>60+ students</strong>, designed 30+ practical assignments, and
+                                    provided constructive code reviews.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Python Instructor -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-dot instructor-dot"><i class="fa-brands fa-python"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-role">Python Programming Instructor</span>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2025 – Present</span>
+                            </div>
+                            <h4 class="timeline-company">Freelance Programming Fundamentals</h4>
+                            <ul class="timeline-bullets">
+                                <li>Delivered Python programming training focused on data types, loops, functions, file
+                                    handling, and OOP.</li>
+                                <li>Guided learners through debugging exercises and mini projects to strengthen
+                                    programming logic.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- GDSC PR Head -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="timeline-dot gdsc-dot"><i class="fa-brands fa-google"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-role">Head of Public Relations</span>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024 – Present</span>
+                            </div>
+                            <h4 class="timeline-company">Google Developer Student Clubs (GDSC) — Fayoum University</h4>
+                            <ul class="timeline-bullets">
+                                <li>Coordinated communication between the student tech community and external partners.
+                                </li>
+                                <li>Supported the organization of technical workshops, community events, and outreach
+                                    initiatives.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- YDP Operations Head -->
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="timeline-dot ydp-dot"><i class="fa-solid fa-handshake"></i></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-role">Head of Operations & Relations</span>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 2024 – Present</span>
+                            </div>
+                            <h4 class="timeline-company">Youth Development Program (YDP)</h4>
+                            <ul class="timeline-bullets">
+                                <li>Coordinated operational activities, event planning, and internal team collaboration.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">&lt;portfolio_showcase&gt;</span>
+                    <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+                    <p class="section-description">Interactive web applications built using HTML5, CSS3, JavaScript,
+                        Bootstrap, REST APIs, and Local Storage.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Filters -->
+                <div class="project-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="featured">Featured</button>
+                    <button class="filter-btn" data-filter="web-apps">Web Apps & APIs</button>
+                    <button class="filter-btn" data-filter="responsive">Responsive UI</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <div class="project-card" data-category="featured web-apps" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-header-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="project-type">Web Application</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Global Pulse</h3>
+                            <p class="project-desc">Responsive web application focused on modern user interface design,
+                                usability, and dynamic layout structures.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                                    class="tag">JavaScript</span><span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://global-pulse-lovat.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="featured web-apps" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-header-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="project-type">Job Application</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Wazzuf Pro</h3>
+                            <p class="project-desc">Job portal web application designed to present job opportunities
+                                through a structured and responsive interface.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                                    class="tag">JavaScript</span><span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://wazzuf-pro.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="featured responsive" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <div class="project-header-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="project-type">Hospitality Platform</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Dar Al Diyafa</h3>
+                            <p class="project-desc">Web project presenting hospitality content through structured UI
+                                components optimized across screen sizes.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                                    class="tag">JavaScript</span><span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://dar-al-diyafa.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="responsive" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-header-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="project-type">Personal Site</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Personal Portfolio</h3>
+                            <p class="project-desc">Responsive portfolio website designed to showcase development
+                                projects, technical skills, and certifications.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                                    class="tag">Bootstrap</span><span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://portfolio2-eight-drab.vercel.app/" target="_blank"
+                                rel="noopener noreferrer" class="btn-link">Live Demo <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="featured web-apps" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-header-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="project-type">REST API App</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Travel Explorer</h3>
+                            <p class="project-desc">Responsive travel website integrating REST APIs to dynamically
+                                retrieve and render destination information.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                                    class="tag">JavaScript</span><span class="tag">REST API</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://travel-website-lyart-gamma.vercel.app/" target="_blank"
+                                rel="noopener noreferrer" class="btn-link">Live Demo <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web-apps" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-header-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="project-type">CRUD Application</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Task Form / Todo App</h3>
+                            <p class="project-desc">Task management application with complete CRUD functionality
+                                utilizing Local Storage for browser data persistence.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span><span class="tag">Local Storage</span><span
+                                    class="tag">DOM Manipulation</span><span class="tag">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://task-form-brown.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="responsive" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-header-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="project-type">Café & Menu Site</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Café EELU</h3>
+                            <p class="project-desc">Responsive café website interface featuring interactive menu items,
+                                services section, and gallery elements.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                                    class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://coffe-eelu.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="responsive" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-header-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="project-type">Modern Landing Page</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Charles Website</h3>
+                            <p class="project-desc">Responsive web interface featuring clean page structure, modern
+                                styling, and fluid layout transitions.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                                    class="tag">Bootstrap</span><span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://charles-8jdl.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="btn-link">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web-apps" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-header-bar">
+                            <div class="window-dots"><span></span><span></span><span></span></div>
+                            <span class="project-type">REST API App</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Weather & Climate Dashboard</h3>
+                            <p class="project-desc">Interactive weather dashboard fetching real-time meteorological data
+                                via REST API with dynamic UI cards.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span><span class="tag">CSS3</span><span
+                                    class="tag">JavaScript</span><span class="tag">REST API</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://travel-website-lyart-gamma.vercel.app/" target="_blank"
+                                rel="noopener noreferrer" class="btn-link">Live Demo <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Training Section -->
+        <section class="section certs-section" id="certifications">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">&lt;verified_qualifications&gt;</span>
+                    <h2 class="section-title">Training & <span class="gradient-text">Certifications</span></h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="certs-grid">
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-award"></i></div>
+                        <h3 class="cert-institution">National Telecommunication Institute (NTI)</h3>
+                        <div class="cert-topics">
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Front-End Web Development</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Networking Fundamentals</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Cybersecurity Fundamentals</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3 class="cert-institution">Creativa Innovation Hub</h3>
+                        <div class="cert-topics">
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Intro to Web Development</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Intro to Mobile App Dev</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Intro to Data Analysis</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> From Idea to Project —
+                                Entrepreneurship</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Digital Marketing</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <h3 class="cert-institution">Technical Qualifications</h3>
+                        <div class="cert-topics">
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Problem Solving</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Python Programming Basics</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> Java Programming Basics</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> ICDL Certification</span>
+                            <span class="cert-chip"><i class="fa-solid fa-check"></i> International AI Driving
+                                License</span>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-people-roof"></i></div>
+                        <h3 class="cert-institution">Activities & Initiatives</h3>
+                        <div class="cert-topics">
+                            <span class="cert-chip"><i class="fa-solid fa-star"></i> ITIDA Gigs Initiative</span>
+                            <span class="cert-chip"><i class="fa-solid fa-star"></i> InnovEgypt Training Program</span>
+                            <span class="cert-chip"><i class="fa-solid fa-star"></i> Innovation Camp — Injaz
+                                Egypt</span>
+                            <span class="cert-chip"><i class="fa-solid fa-star"></i> Volunteer — Social Solidarity
+                                Units</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">&lt;connect&gt;</span>
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="section-description">Seeking Junior Front-End Developer opportunities where I can
+                        contribute and grow.</p>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Cards Column -->
+                    <div class="contact-info-col" data-aos="fade-right">
+                        <div class="contact-card">
+                            <div class="contact-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">PERSONAL EMAIL</span>
+                                <a href="mailto:hajarkamel653@gmail.com"
+                                    class="contact-value">hajarkamel653@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">UNIVERSITY EMAIL</span>
+                                <a href="mailto:2400434@student.eelu.edu.eg"
+                                    class="contact-value">2400434@student.eelu.edu.eg</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon phone-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">PHONE / WHATSAPP</span>
+                                <a href="tel:01040340552" class="contact-value">01040340552</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon loc-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">LOCATION</span>
+                                <span class="contact-value">Egypt - Fayoum</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">LINKEDIN</span>
+                                <a href="https://www.linkedin.com/in/hajar-kamel-mohammed-aa86b6326" target="_blank"
+                                    rel="noopener noreferrer" class="contact-value">hajar-kamel-mohammed</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon github-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="contact-details">
+                                <span class="contact-label">GITHUB</span>
+                                <a href="https://github.com/hajarkamel2006" target="_blank" rel="noopener noreferrer"
+                                    class="contact-value">hajarkamel2006</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-col" data-aos="fade-left">
+                        <form class="contact-form" id="contact-form">
+                            <h3 class="form-title">Send a Message</h3>
+                            <div class="form-group">
+                                <label for="user_name">Your Name</label>
+                                <input type="text" id="user_name" name="name" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user_email">Your Email</label>
+                                <input type="email" id="user_email" name="email" placeholder="email@example.com"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    placeholder="Front-End Developer Opportunity" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                            <div class="form-feedback" id="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#home" class="logo">
+                    <span class="logo-code">&lt;</span>Hajar<span class="logo-highlight">Kamel</span><span
+                        class="logo-code">/&gt;</span>
+                </a>
+                <p class="footer-copy">&copy; <span id="current-year">2026</span> Hajar Kamel Mohammed. Front-End Web
+                    Developer.</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/hajar-kamel-mohammed-aa86b6326" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/hajarkamel2006" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:hajarkamel653@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:01040340552" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
